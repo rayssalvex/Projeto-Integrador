@@ -1,0 +1,64 @@
+.footer {
+  padding: 30px;
+  background-color:rgb(247, 241, 247);
+  color: rgb(233, 224, 224);
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* Distribui as colunas igualmente */
+  flex-wrap: wrap; /* Permite que as colunas se ajustem caso o espaço fique muito pequeno */
+  margin-bottom: 20px; /* Adiciona espaço entre as colunas e o copyright */
+}
+
+.footer-content nav {
+  flex: 1; /* Faz com que cada nav ocupe a mesma largura */
+  min-width: 150px; /* Define uma largura mínima para as colunas */
+}
+
+.footer-title {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: rgb(73, 31, 116);
+}
+
+.link {
+  display: block;
+  color: rgb(90, 56, 109);
+  margin-bottom: 5px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link-hover:hover {
+  color: var(--dark-purple); /* Cor ao passar o mouse */
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Espaçamento entre o texto e as logos */
+  margin-top: 10px;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 15px; /* Espaçamento entre as logos */
+}
+
+.footer-social-icons img {
+  width: 29px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-icons img:hover {
+  transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+.footer-copyright {
+  margin: 0;
+  color: rgb(90, 56, 109)
+}

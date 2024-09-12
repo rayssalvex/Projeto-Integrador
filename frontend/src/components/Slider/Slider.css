@@ -1,0 +1,28 @@
+.home__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
+  
+  .home__swiper {
+    width: 80%;
+    overflow: hidden;
+  }
+  
+  .swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .swiper-slide {
+    flex: 1;
+    min-width: 100%;
+  }
+  
+  .home__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  

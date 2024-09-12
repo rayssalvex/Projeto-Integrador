@@ -1,0 +1,84 @@
+.costumer-opinion {
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.costumer-opinion h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: var(--purple-light);
+}
+
+.opinions {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    gap: 20px;
+}
+
+.opinion {
+    background-color: rgb(247, 241, 247);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 18px;
+    padding: 20px;
+    width: 500px;  /* Define a largura fixa */
+    height: 290px; /* Define a altura fixa para todos os cards */
+    scroll-snap-align: start;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.opinion img {
+    width: 90px;   /* Define a largura fixa para a imagem */
+    height: 100px;  /* Define a altura fixa para a imagem */
+    object-fit: cover;
+    border-radius: 50%;  /* Deixa a imagem redonda */
+    margin-bottom: 10px;
+    margin-left: 160px;
+}
+
+.opinion h3 {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.opinion p {
+    font-size: 22px;  /* Ajuste no tamanho da fonte para se adequar melhor ao espaço */
+    color: #777;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.opinions::-webkit-scrollbar {
+    height: 8px;
+}
+
+.opinions::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.opinions::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+
+.add-opinion-button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--purple-light); /* Ou a cor que preferir */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-opinion-button:hover {
+    background-color: var(--dark-purple); /* Cor ao passar o mouse */
+}
