@@ -9,6 +9,7 @@ const Add = () => {
   const [data, setData] = useState({
     name: "",
     author:"",
+    page: "",
     status: true,
     description: "",
     price: "",
@@ -26,6 +27,7 @@ const Add = () => {
     const formData = new FormData();
     formData.append("name", data.name);
     formData.append("author", data.author);
+    formData.append("page", data.page);
     formData.append("status", data.status);
     formData.append("description", data.description);
     formData.append("price", Number(data.price.replace(',', '.'))); // Converter para número
@@ -37,6 +39,7 @@ const Add = () => {
       setData({
         name: "",
         author:"",
+        page:"",
         status: true,
         description: "",
         price: "",
@@ -81,11 +84,15 @@ const Add = () => {
         </div>
         <div className='add-product-name flex-col'>
           <p>Nome do Livro</p>
-          <input name='name' onChange={onChangeHandler} value={data.name} type="text" placeholder='Digite aqui' required />
+          <input name='name' onChange={onChangeHandler} value={data.name} type="text" placeholder='Digite aqui o nome do livro' required />
         </div>
         <div className='add-author-name flex-col'>
           <p>Nome do Autor</p>
           <input name='author' onChange={onChangeHandler} value={data.author} type="text" placeholder='Digite o nome do autor aqui' required />
+        </div>
+        <div className='add-product-name flex-col'>
+          <p>Páginas do livro</p>
+          <input name='page' onChange={onChangeHandler} value={data.page} type="text" placeholder='Digite aqui o número de páginas' required />
         </div>
         <div className='add-product-status flex-col'>
           <p>Visível no site</p>
@@ -96,11 +103,11 @@ const Add = () => {
         </div>
         <div className='add-product-description flex-col'>
           <p>Descrição do livro</p>
-          <textarea name='description' onChange={onChangeHandler} value={data.description} type="text" rows={6} placeholder='Escreva o conteúdo aqui' required />
+          <textarea name='description' onChange={onChangeHandler} value={data.description} type="text" rows={6} placeholder='Escreva aqui a sinopse' required />
         </div>
         <div className='add-category-price'>
           <div className='add-category flex-col'>
-            <p>Categoria do produto</p>
+            <p>Categoria do livro</p>
             <select name='category' onChange={onChangeHandler} >
               <option value="Infantil">Infantil</option>
               <option value="Romance">Romance</option>

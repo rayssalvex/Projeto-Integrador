@@ -26,6 +26,7 @@ const addBook = async (req, res) => {
         const book = new bookModel({
             name: req.body.name,
             author: req.body.author,
+            page: req.body.page,
             description: req.body.description,
             status: req.body.status,
             price: req.body.price,
@@ -42,6 +43,26 @@ const addBook = async (req, res) => {
         console.log(error);
         // Responde com um JSON indicando falha e uma mensagem de erro
         res.json({ success: false, message: "Erro ao adicionar produto" });
+    }
+};
+
+const detailsBook = async (req, res) => {
+    try {
+        // Busca o livro no banco de dados pelo ID passado na rota
+        const book = await bookModel.findById(req.params.id);
+
+        // Verifica se o livro foi encontrado
+        if (book) {
+            // Retorna o livro encontrado
+            res.json({ success: true, data: book });
+        } else {
+            // Se não encontrado, retorna uma mensagem de erro
+            res.json({ success: false, message: 'Livro não encontrado' });
+        }
+    } catch (error) {
+        // Em caso de erro, responde com uma mensagem e loga o erro no console
+        console.log(error);
+        res.json({ success: false, message: 'Erro no servidor' });
     }
 };
 
@@ -161,4 +182,4 @@ const removeBook = async (req, res) => {
     }
 };
 
-export { listBook, addBook, editBook, removeBook, updateStatus, updatePromotion};
+export { listBook, detailsBook, addBook, editBook, removeBook, updateStatus, updatePromotion};

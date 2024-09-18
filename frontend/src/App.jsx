@@ -12,30 +12,29 @@ import 'react-toastify/dist/ReactToastify.css';
 import Verify from './pages/Verify/Verify'
 import Contato from './components/Contato/Contato'
 import NewsletterForm from './components/Newsletter/NewsLetterForm';
-import Services from './components/Services/Services'
-
-
-
+// import Swap from './pages/Swap/Swap'
+import BookDetails from './components/BookDetails/BookDetails'  // Importe o componente de detalhes do livro
 
 const App = () => {
 
-  const [showLogin,setShowLogin] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
 
   return (
     <>
-    <ToastContainer/>
-    {showLogin?<LoginPopup setShowLogin={setShowLogin}/>:<></>}
+      <ToastContainer />
+      {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}
       <div className='app'>
-        <Navbar setShowLogin={setShowLogin}/>
+        <Navbar setShowLogin={setShowLogin} />
         <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/cart' element={<Cart />}/>
-          <Route path='/order' element={<PlaceOrder />}/>
-          <Route path='/myorders' element={<MyOrders />}/>
-          <Route path='/verify' element={<Verify />}/>
-          <Route path='/contato' element={<Contato/>}/>
-          <Route path='/services' element={<Services />}/>
-          <Route path='/newsletter' element={<NewsletterForm />}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/order' element={<PlaceOrder />} />
+          <Route path='/myorders' element={<MyOrders />} />
+          <Route path='/verify' element={<Verify />} />
+          {/* <Route path='/swap' element={<Swap />} /> */}
+          <Route path='/contato' element={<Contato />} />
+          <Route path='/newsletter' element={<NewsletterForm />} />
+          <Route path='/book/:id' element={<BookDetails />} /> {/* Adiciona a rota dos detalhes do livro */}
         </Routes>
       </div>
       <Footer />

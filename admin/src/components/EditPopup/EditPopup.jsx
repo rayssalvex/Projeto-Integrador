@@ -9,6 +9,7 @@ const EditPopup = ({ setShowEditPopup, product, fetchList, url }) => {
     const [data, setData] = useState({
         name: product.name,
         author: product.author,
+        page: product.page,
         description: product.description,
         category: product.category,
         price: product.price,
@@ -21,6 +22,7 @@ const EditPopup = ({ setShowEditPopup, product, fetchList, url }) => {
             setData({
                 name: product.name,
                 author: product.author,
+                page: product.page,
                 description: product.description,
                 category: product.category,
                 price: product.price,
@@ -48,6 +50,7 @@ const EditPopup = ({ setShowEditPopup, product, fetchList, url }) => {
         const formData = new FormData();
         formData.append('name', data.name);
         formData.append('author', data.author);
+        formData.append('page', data.page);
         formData.append('description', data.description);
         formData.append('category', data.category);
         formData.append('price', data.price);
@@ -87,6 +90,8 @@ const EditPopup = ({ setShowEditPopup, product, fetchList, url }) => {
                     <p>Nome do produto</p>
                     <input name='name' onChange={onChangeHandler} value={data.name} type="text" placeholder='Nome' required />
                     <p>Autor</p>
+                    <input name='page' onChange={onChangeHandler} value={data.page} type="text" placeholder='Páginas' required />
+                    <p>Páginas</p>
                     <input name='author' onChange={onChangeHandler} value={data.author} type="text" placeholder='Autor' required />
                     <p>Descrição do livro</p>
                     <textarea name='description' onChange={onChangeHandler} value={data.description} rows={6} type="text" placeholder='Descrição' required />

@@ -7,7 +7,7 @@ import dotenv from 'dotenv';
 import 'dotenv/config'
 import cartRouter from "./routes/cartRoute.js"
 import orderRouter from "./routes/orderRoute.js"
-import swapRouter from "./routes/swapRoute.js"
+// import swapRouter from "./routes/swapRoute.js"
 
 // app config
 const app = express()
@@ -27,7 +27,7 @@ app.use("/api/book", bookRouter)
 app.use("/images",express.static('uploads'))
 app.use("/api/cart", cartRouter)
 app.use("/api/order",orderRouter)
-app.use("/api/swap",swapRouter)
+// app.use("/api/swap",swapRouter)
 
 app.get("/", (req, res) => {
     res.send("API Working")

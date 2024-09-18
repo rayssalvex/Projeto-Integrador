@@ -1,0 +1,68 @@
+.book-details {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: center; /* Centraliza o texto no contêiner */
+  padding: 20px;
+  max-width: 1200px; /* Limita a largura do conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo na página */
+}
+
+.book-details-image {
+  max-width: 300px;
+  margin-right: 40px;
+  margin-top: 95px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.book-details-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Diminui o espaçamento entre os elementos */
+  align-items: center; /* Centraliza horizontalmente */
+  margin-top: 100px;
+  max-width: 900px; /* Limita a largura das informações */
+  text-align: center; /* Centraliza o texto dos elementos filhos */
+}
+
+.book-details-info h2 {
+  color: rgb(76, 34, 139);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.book-details-price {
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 0;
+  color: rgb(76, 34, 139);
+}
+
+.add-to-cart-button {
+  padding: 10px 12px;
+  background-color: var(--purple-light);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.add-to-cart-button:hover {
+  background-color: var(--dark-purple);
+}
+
+/* .favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px; 
+  cursor: pointer;
+}
+
+.favorite-icon img {
+  width: 24px; 
+  height: 24px;
+} */

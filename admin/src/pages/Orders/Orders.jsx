@@ -9,6 +9,7 @@ const Order = () => {
   const [filters, setFilters] = useState({
     name: '',
     author: '',
+    page: '',
     status: '',
     minPrice: '',
     maxPrice: ''
@@ -140,9 +141,9 @@ const Order = () => {
                 <option value="Saiu para transportadora">Saiu para Transportadora</option>
                 <option value="Entregue">Entregue</option>
               </select>
-              <div className='action-icon-container'>
+              {/* <div className='action-icon-container'>
                 <img className='action-icon' src={assets.trash_icon} onClick={() => removeOrder(order._id)} />
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

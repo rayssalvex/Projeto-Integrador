@@ -8,6 +8,9 @@ const bookSchema = new mongoose.Schema({
     // Nome do autor do livro (obrigatório)
     author: { type: String, required: true },
 
+    // Quantidade de páginas livro (obrigatório)
+    page:{type:Number, required:true},
+
     // Descrição do produto (obrigatório)
     description: { type: String, required: true },
 
@@ -25,6 +28,7 @@ const bookSchema = new mongoose.Schema({
 
     // Categoria do produto (obrigatório)
     category: { type: String, required: true }
+    
 })
 
 // Cria o modelo "book" baseado no esquema definido ou utiliza o já existente

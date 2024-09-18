@@ -26,7 +26,6 @@
     color: var(--dark-purple);
     margin: 10px 0;
 }
-
 .contato-form {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -68,7 +67,9 @@
     border-color: var(--darker-green); 
     color: black; 
 }
+.form-success-message{
 
+}
 /* Media queries para responsividade */
 @media (max-width: 768px) {
     .contato {

@@ -13,6 +13,7 @@ const List = () => {
   const [filters, setFilters] = useState({
     name: '',
     author:'',
+    page:'',
     category: '',
     minPrice: '',
     maxPrice: ''

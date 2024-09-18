@@ -52,7 +52,7 @@
 }
 
 .carousel-container {
-    margin-top: 4vw;
+    margin-top:100px;
     width: 25%;
     margin:  auto;
     margin-right: 300px;
@@ -63,7 +63,7 @@
     width: 90%;
     height: auto;
     /* cursor: pointer; */
-    margin-top: 120px;
+    margin-top: 180px;
   }
   
   .slick-dots {

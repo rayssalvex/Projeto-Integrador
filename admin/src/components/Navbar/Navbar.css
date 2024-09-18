@@ -4,8 +4,15 @@
     align-items: center;
     padding: 8px 4%;
 }
+
+.navbar .texto{
+    font-size: 20px;
+    margin-left: 20px;
+    color: rgb(82, 88, 95);
+}
 .navbar .logo{
-    width: max(10%, 20px);
+    width: max(10%, 30px);
+    margin-left: 10px;
 }
 .navbar .profile{
     width: 50px;

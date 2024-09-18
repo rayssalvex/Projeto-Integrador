@@ -1,6 +1,5 @@
 import basket_icon from './basket_icon.png'
 import logo from './logo.svg'
-import header_img from './header_img.png'
 import header_img2 from './header_img2.png'
 import search_icon from './search_icon.png'
 import linkedin_logo from './linkedin.png'
@@ -8,10 +7,14 @@ import instagram_logo from './instagram.png'
 import github_logo from './github.png'
 
 // Header
-import header1 from './homebook.png'
-import header2 from './homebook-2.png'   
-import header3 from './homebook-3.png'
-import header4 from './homebook-4.png'
+import header1 from './header1.jpg'
+import header2 from './header2.jpg'   
+import header3 from './header3.jpg'
+import header4 from './header4.jpg'
+import header5 from './header5.jpg'
+import header6 from './header6.jpg'
+import header7 from './header7.jpg'
+import header8 from './header8.jpg'
 
 // menu de livros
 import menu1 from './men1.jpg'
@@ -37,6 +40,19 @@ import opinion1 from './costumer1.png'
 import opinion2 from './costumer2.png'
 import opinion3 from './costumer3.png'
 
+// CarouselAuthor
+// import author1 from './author1.jpg'
+// import author2 from './author2.jpg'  
+// import author3 from './author3.jpg'
+// import author4 from './author4.jpeg'  
+// import author5 from './author5.jpeg'  
+// import author6 from './author6.jpg'
+
+// logo
+// import logo1 from './logop.png'
+// import logo2 from './logo2.png'
+import logo1 from './logon.png'
+
 
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
@@ -60,7 +76,6 @@ export const assets = {
     logo,
     basket_icon,
     avatar_icon,
-    header_img,
     header_img2,
     search_icon,
     rating_starts,
@@ -72,6 +87,7 @@ export const assets = {
     instagram_logo,
     github_logo,
     newsletter_img,
+    logo1,
     banner1,
     banner2,
     banner3,
@@ -82,6 +98,8 @@ export const assets = {
     opinion1,
     opinion2,
     opinion3,
+    // logo1,
+    // logo2,
     cross_icon,
     selector_icon,
     profile_icon,
@@ -92,6 +110,10 @@ export const assets = {
     header2,
     header3,
     header4,
+    header5,
+    header6,
+    header7,
+    header8,
     checked,
     un_checked,
     search,

@@ -1,9 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './Navbar.css';
-import { FaHeart } from 'react-icons/fa';
 import { assets } from '../../assets/assets';
 import { useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../Context/StoreContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
@@ -44,24 +45,35 @@ const Navbar = ({ setShowLogin }) => {
       }
     }, 100);
   };
-;
+
 
   return (
     <div className='navbar'>
+  {/* <div className='navbar-logo' onClick={() => handleNavigate('/', 'home')}>
+        <img src={assets.logo1} alt="Logo" className='nav-logo-img' />
+      </div> */}
+
       <div onClick={() => handleNavigate('/', 'home')}>
       </div>
       <ul className="navbar-menu">
         <li onClick={() => handleNavigate('/', 'home')} className={menu === "home" ? "active" : ""}>Home</li>
         <li onClick={() => handleNavigate('/', 'explore-menu')} className={menu === "menu" ? "active" : ""}>Livros</li>
         <li onClick={() => handleNavigate('/', 'promo-display')} className={menu === "promo" ? "active" : ""}>Promoções</li>
-        <li onClick={() => handleNavigate('/swap', 'swap-display')} className={menu === "swap" ? "active" : ""}>Trocas</li>
         <li onClick={() => handleNavigate('/contato', 'contact')} className={menu === "contact" ? "active" : ""}>Contato</li>
       </ul>
       <div className='navbar-icons'>
-        <div onClick={() => navigate('/cart')} className='navbar-search-icon'>
-          <img src={assets.bag} alt="Cart Icon" className='nav-bag-icon' />
-          <div className={getTotalCartAmount() > 0 ? "dot" : ""}></div>
-        </div>
+      {/* Ícone de coração */}
+      <div onClick={() => setIsFavoritesOpen(!isFavoritesOpen)} className='navbar-favorites-icon'>
+        <FontAwesomeIcon icon={faHeart} style={{ cursor: 'pointer', color: 'white' }} />
+      </div>
+
+      <div onClick={() => navigate('/cart')} className='navbar-search-icon'>
+    <img src={assets.bag} alt="Cart Icon" className='nav-bag-icon' />
+    {getTotalCartAmount() > 0 && (
+      <div className="cart-notification-dot"></div>
+    )}
+  </div>
+  
       </div>
       {!token ? (
         <p className='perfil' onClick={() => setShowLogin(true)}><img src={assets.profile_icon} alt="Profile Icon" /></p>

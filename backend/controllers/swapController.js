@@ -7,7 +7,7 @@ const listSwap = async (req, res) => {
         // Tenta encontrar todos os produtos no banco de dados
         const swaps = await swapModel.find({});
         // Responde com um JSON contendo sucesso e os dados dos produtos
-        res.json({ success: true, data: books });
+        res.json({ success: true, data: swapss });
     } catch (error) {
         // Em caso de erro, loga o erro no console
         console.log(error);
@@ -28,7 +28,6 @@ const addSwap = async (req, res) => {
             author: req.body.author,
             description: req.body.description,
             price: req.body.price,
-            category: req.body.category,
             image: image_filename,
         });
 
@@ -50,7 +49,7 @@ const removeSwap = async (req, res) => {
         // Obtém o ID do produto a ser removido
         const swapId = req.params.id;
         // Tenta encontrar o produto no banco de dados
-        const swap = await bookModel.findById(swapId);
+        const swap = await swapModel.findById(swapId);
         if (!swap) {
             // Se o produto não for encontrado, responde com falha
             return res.json({ success: false, message: "Produto não encontrado" });

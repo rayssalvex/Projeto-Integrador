@@ -1,5 +1,5 @@
 import express from 'express';
-import { addSwap, listSwap, removeSwap} from '../controllers/swapController.js';
+import { addSwap, listSwap, removeSwap } from '../controllers/swapController.js';
 import multer from 'multer';
 const swapRouter = express.Router();
 

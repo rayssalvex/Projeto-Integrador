@@ -5,7 +5,8 @@ const userSchema = new mongoose.Schema({
     name: { type: String, required: true }, // Nome do usuário
     email: { type: String, required: true, unique: true }, // Email único do usuário
     password: { type: String, required: true }, // Senha do usuário
-    cartData: { type: Object, default: {} } // Dados do carrinho de compras
+    cartData: { type: Object, default: {} }, // Dados do carrinho de compras
+    favorite: { type: mongoose.Schema.Types.ObjectId, ref: 'book' }
 }, { minimize: false }); // Manter campos vazios no objeto
 
 // Criando o modelo para a coleção de usuários

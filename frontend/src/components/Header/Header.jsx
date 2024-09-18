@@ -14,7 +14,7 @@ const Header = () => {
       slidesToShow: 2,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 2600,
     };
   
     const handleBannerClick = (anchor) => {
@@ -31,7 +31,7 @@ const Header = () => {
             <p>"Um leitor vive mil vidas antes de morrer. O homem que nunca lê vive apenas uma."</p>
             <a href='#explore-menu'><h4>Explorar</h4></a>
          </div>
-         {/* <div className="carousel-container">
+         <div className="carousel-container">
       <Slider {...settings}>
         <div onClick={() => handleBannerClick('#explore-menu')}>
           <img src={assets.header1} alt="Promoção 1" className="carousel-banner" />
@@ -45,8 +45,21 @@ const Header = () => {
         <div onClick={() => handleBannerClick('#explore-menu')}>
           <img src={assets.header4} alt="Promoção 4" className="carousel-banner" />
         </div>
+        <div onClick={() => handleBannerClick('#explore-menu')}>
+          <img src={assets.header5} alt="Promoção 5" className="carousel-banner" />
+        </div>
+        <div onClick={() => handleBannerClick('#explore-menu')}>
+          <img src={assets.header6} alt="Promoção 6" className="carousel-banner" />
+        </div>
+        <div onClick={() => handleBannerClick('#explore-menu')}>
+          <img src={assets.header7} alt="Promoção 7" className="carousel-banner" />
+        </div>
+        <div onClick={() => handleBannerClick('#explore-menu')}>
+          <img src={assets.header8} alt="Promoção 8" className="carousel-banner" />
+        </div>
+        
       </Slider>
-    </div> */}
+    </div>
          </div>
    );
 };

@@ -1,5 +1,6 @@
 /* Navbar.css */
 
+/* Estilo da Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -14,7 +15,7 @@
     box-shadow: 0 4px 8px rgba(84, 82, 82, 0.3);
 }
 
-
+/* Logo */
 .navbar .logo {
     width: 150px;
 }
@@ -24,6 +25,7 @@
     position: absolute;
 }
 
+/* Menu da Navbar */
 .navbar-menu {
     width: 60%;
     display: flex;
@@ -35,58 +37,52 @@
     font-size: 18px;
 }
 
-/* .navbar-menu li.active {
-    padding-bottom: 2px;
-    border-bottom: 2px solid white;
-    
-} */
-.navbar-menu li:hover{
+.navbar-menu li:hover {
     cursor: pointer;
 }
 
-.navbar-right {
+/* Ícones da Navbar */
+.nav-logo-img{
+    height: 50px;
+    width: 170px;
+}
+.navbar-icons {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding: 2rem;
-    height: 3rem;
-    gap: 40px;
-    background-color: var(--dark-purple);
+    gap: 20px;
 }
+.navbar-favorites-icon{
+     font-size: 24px;
 
-.navbar-search-icon {
+}
+/* .nav-favorites-icon:hover {
+    filter: drop-shadow(1px 1px 7px #000000a1);
+    cursor: pointer;
+} */
+.navbar-favorites-icon, .navbar-cart-icon {
     position: relative;
-    margin-left: 20px;
 }
 
-.navbar-search-icon:hover {
+.navbar-favorites-icon:hover, .navbar-cart-icon:hover {
     cursor: pointer;
 }
 
-.navbar-search-icon .dot {
+/* Notificação de itens no carrinho */
+.cart-notification-dot {
     position: absolute;
-    min-width: 10px;
-    min-height: 10px;
-    background-color: var(--purple);
-    border-radius: 5px;
-    top: -10px;
-    right: -8px;
+    top: -5px;
+    right: -5px; /* Ajustado para aparecer corretamente no ícone */
+    background-color: rgb(255, 255, 255);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
 
-.navbar-right button {
-    background: transparent;
-    font-size: 16px;
-    color: white;
-    border: transparent;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
+/* Estilo dos ícones */
 .nav-bag-icon, .nav-search-icon, .nav-profile-icon {
     width: 30px;
     height: auto;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .nav-search-icon:hover {
@@ -98,17 +94,13 @@
     filter: drop-shadow(1px 1px 7px #000000a1);
 }
 
-.navbar-right button:hover {
-    filter: drop-shadow(1px 2px 7px #000000a1);
-}
-
 .nav-profile-icon:hover {
-    filter: drop-shadow(1px 2px 7px #000000a1);
+    filter: drop-shadow(1px 1px 7px #000000a1);
 }
 
+/* Dropdown do perfil */
 .navbar-profile {
     position: relative;
-
 }
 
 .navbar-profile:hover {
@@ -155,7 +147,7 @@
     border: none;
 }
 
-/* Estilo inicial para o menu fixo */
+/* Menu fixo */
 .navbar_menu-fixo {
     position: fixed;
     top: 0;
@@ -169,7 +161,6 @@
     background-color: var(--dark-purple);
 }
 
-/* Estilo para os itens do menu fixo */
 .navbar_menu-fixo ul {
     list-style: none;
     display: flex;
@@ -198,11 +189,11 @@
     padding-bottom: 2px;
     cursor: pointer;
     color: var(--dark-purple);
-    border-bottom: 2px solid var(--dark-purple); /* Bordas embaixo ao passar o mouse */
+    border-bottom: 2px solid var(--dark-purple);
 }
 
 .navbar_menu-fixo a.active {
-    color: var(--dark-purple); /* Cor dos links ativos */
+    color: var(--dark-purple);
 }
 
 .perfil {
@@ -215,6 +206,23 @@
     cursor: pointer;
 }
 
+.cart-icon-container {
+    position: relative;
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid black;
+  }
+  
 /* Media queries para responsividade */
 
 @media (max-width: 1050px) {

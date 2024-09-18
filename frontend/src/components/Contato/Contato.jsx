@@ -9,7 +9,7 @@ const Contato = () => {
     return (
         <div className="contato">
             <h2>Contato</h2>
-            <p>Deixe aqui um elogio, dúvida, problema ou sugestão. Contato direto com a sua livraria online.</p>
+            <p>Deixe aqui um elogio, dúvida, problema ou sugestão.<br/> Contato direto com a sua livraria online.</p>
             <form className="contato-info">
                 <div className="contato-form">
                     <label htmlFor="name" >Nome:</label>

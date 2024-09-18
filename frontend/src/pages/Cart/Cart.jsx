@@ -1,14 +1,13 @@
-import React, { useContext, useEffect, useState } from 'react'
-import './Cart.css'
-import { StoreContext } from '../../Context/StoreContext'
+import React, { useContext, useEffect, useState } from 'react';
+import './Cart.css';
+import { StoreContext } from '../../Context/StoreContext';
 import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
 
-  const { cartItems, book_list, removeFromCart, getTotalCartAmount, url, currency, deliveryCharge } = useContext(StoreContext);
+  const { cartItems, book_list, removeFromCart, addToCart, getTotalCartAmount, url, currency, deliveryCharge } = useContext(StoreContext);
   const navigate = useNavigate();
   const [pagamentoOpcao, setPagamentoOpcao] = useState(''); // Estado para controlar a opção de pagamento selecionada
-
 
   const [menu, setMenu] = useState(0); // Estado para controlar a posição do menu
 
@@ -17,28 +16,24 @@ const Cart = () => {
   }, [menu]);
 
   const handlepagamentoOpcaoClick = (opcao) => {
-    // Verifica se a opção de pagamento já está selecionada
     if (pagamentoOpcao === opcao) {
       setPagamentoOpcao(''); // Remove a seleção se já estiver selecionada
     } else {
       setPagamentoOpcao(opcao); // Define a opção de pagamento selecionada
-      // navigate(`/${opcao}`); // Redireciona para a página correspondente à opção de pagamento clicada
     }
   };
 
   const handleFinalizarPedido = () => {
-    // Redireciona para a página correspondente à opção de pagamento selecionada
     switch (pagamentoOpcao) {
       case 'entrega':
         navigate('/entrega');
         break;
-      case 'retirada':
-        navigate('/retirada');
-        break;
-      default:
-        // Redireciona para uma página padrão caso a opção não seja reconhecida
-        navigate('/');
-        break;
+      // case 'retirada':
+      //   navigate('/retirada');
+      //   break;
+      // default:
+      //   navigate('/');
+      //   break;
     }
   };
 
@@ -52,17 +47,23 @@ const Cart = () => {
         <hr />
         {book_list.map((item, index) => {
           if (cartItems[item._id] > 0) {
-            return (<div key={index}>
-              <div className="cart-items-title cart-items-item">
-                <img src={url + "/images/" + item.image} alt="" />
-                <p>{item.name}</p>
-                <p>{currency}{item.price.toFixed(2).replace('.', ',')}</p>
-                <div>{cartItems[item._id]}</div>
-                <p>{currency}{(item.price * cartItems[item._id]).toFixed(2).replace('.', ',')}</p>
-                <p className='cart-items-remove-icon' onClick={() => removeFromCart(item._id)}>x</p>
+            return (
+              <div key={index}>
+                <div className="cart-items-title cart-items-item">
+                  <img src={url + "/images/" + item.image} alt="" />
+                  <p>{item.name}</p>
+                  <p>{currency}{item.price.toFixed(2).replace('.', ',')}</p>
+                  <div className="cart-item-quantity">
+                    <button onClick={() => addToCart(item._id)}>+</button>
+                    <div>{cartItems[item._id]}</div>
+                    <button onClick={() => removeFromCart(item._id)}>-</button>
+                  </div>
+                  <p>{currency}{(item.price * cartItems[item._id]).toFixed(2).replace('.', ',')}</p>
+                  <p className='cart-items-remove-icon' onClick={() => removeFromCart(item._id, true)}>x</p> {/* Remove todos os itens */}
+                </div>
+                <hr />
               </div>
-              <hr />
-            </div>)
+            )
           }
         })}
       </div>
@@ -89,7 +90,8 @@ const Cart = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Cart
+export default Cart;
+

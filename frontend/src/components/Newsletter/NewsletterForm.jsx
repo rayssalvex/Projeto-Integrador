@@ -29,8 +29,8 @@ const NewsletterForm = () => {
         <img src={assets.newsletter_img} alt="Inscreva-se na nossa newsletter" />
       </div>
       <div className="newsletter-content">
-        <h2>Inscreva-se na nossa Newsletter</h2>
-        <h4>e fique por dentro das novidades!</h4>
+        <h2>Inscreva-se na nossa Newsletter<br/>e fique por dentro das novidades!</h2>
+        {/* <h4>e fique por dentro das novidades!</h4> */}
         {!submitted ? (
           <form onSubmit={handleSubmit} className="newsletter-form">
             <input
@@ -66,7 +66,7 @@ const NewsletterForm = () => {
               <option value="">Selecione seu gênero literário preferido</option>
               <option value="infantil">Infantil</option>
               <option value="romance">Romance</option>
-              <option value="ficcao">Ficção</option>
+              <option value="fantasia">Fantasia</option>
               <option value="terror">Terror</option>
               <option value="suspense">Suspense</option>
               <option value="outros">Outros</option>

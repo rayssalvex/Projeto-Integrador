@@ -12,7 +12,7 @@ const CostumerOpinion = () => {
 
     return (
         <div className='costumer-opinion'>
-            <h2>Opinião dos clientes</h2>
+            <h2>Opinião de clientes</h2>
             <div className='opinions'>
                 <div className='opinion'>
                     <img src={assets.opinion1} alt='Opinião 1' />
@@ -27,7 +27,7 @@ const CostumerOpinion = () => {
                 <div className='opinion'>
                     <img src={assets.opinion3} alt='Opinião 3' />
                     <h3>Christina Lauren</h3>
-                    <p>"Gostei muito da plataforma, troquei meus livros sem complicação."</p>
+                    <p>"Gostei muito da plataforma, comprei meus livros sem complicação."</p>
                 </div>
             </div>
             <button className='add-opinion-button' onClick={handleAddOpinion}>
