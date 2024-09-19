@@ -5,7 +5,7 @@ import { StoreContext } from '../../Context/StoreContext';
 import { Link } from 'react-router-dom'; 
 
 const BookItem = ({ image, name, author, desc, status, price, id }) => {
-  const { cartItems, addToCart, removeFromCart, url, currency, addToFavorites, removeFromFavorites, favorites } = useContext(StoreContext);
+  const { cartItems, addToCart, removeFromCart, url, currency, addFavorite, removeFavorite, getFavorites } = useContext(StoreContext);
 
   // Verifica se o livro está favoritado
   // const isFavorited = favorites.some(fav => fav._id === id);

@@ -79,4 +79,54 @@ const registerUser = async (req, res) => {
     }
 }
 
+// Adicionar um item aos favoritos do usuário
+// const addFavorite = async (req, res) => {
+//     const userId = req.user.id; 
+//     const itemId = req.body.itemId; 
+//     try {
+//         const user = await userModel.findById(userId);
+//         if (!user.favorites.includes(itemId)) {
+//             user.favorites.push(itemId); 
+//             await user.save(); 
+//         }
+
+//         res.json({ success: true, message: 'Item adicionado aos favoritos!' });
+//     } catch (error) {
+//         console.log(error);
+//         res.json({ success: false, message: 'Erro ao adicionar aos favoritos' });
+//     }
+// }
+
+// Remover um item dos favoritos do usuário
+// const removeFavorite = async (req, res) => {
+//     const userId = req.user.id;
+//     const itemId = req.body.itemId;
+
+//     try {
+//         const user = await userModel.findById(userId);
+//         user.favorites = user.favorites.filter(fav => fav.toString() !== itemId);
+//         await user.save();
+
+//         res.json({ success: true, message: 'Item removido dos favoritos!' });
+//     } catch (error) {
+//         console.log(error);
+//         res.json({ success: false, message: 'Erro ao remover dos favoritos' });
+//     }
+// }
+
+// Obter a lista de favoritos do usuário
+// const getFavorites = async (req, res) => {
+//     const userId = req.user.id;
+
+//     try {
+//         const user = await userModel.findById(userId).populate('favorites');
+//         res.json(user.favorites); // Retorna os favoritos do usuário
+//     } catch (error) {
+//         console.log(error);
+//         res.json({ success: false, message: 'Erro ao buscar favoritos' });
+//     }
+// }
+
 export { loginUser, registerUser };
+
+// addFavorite, removeFavorite, getFavorites

@@ -11,7 +11,7 @@ import order_icon from './order_icon.svg'
 import filter_icon from './filter_icon.svg'
 import books_icon from './iconbook.png'
 import avatar_icon from './avatar_icon.jpeg'
-import logo_icon from './logo_ic.png'
+import logo_icon from './logon.jpg'
 
 
 import github_logo from './github.png'

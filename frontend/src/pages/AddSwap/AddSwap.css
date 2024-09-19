@@ -1,4 +1,4 @@
-.add-swap{
+/* .add-swap{
   width: 70%;
   margin-left: max(5vw,25px);
   margin-top: 50px;
@@ -98,6 +98,6 @@ input:checked + .slider:before {
   .add-category, .add-price {
     width: 100%;
   }
-} */
+}  */
 
  /* Responsive design for mobile screens */

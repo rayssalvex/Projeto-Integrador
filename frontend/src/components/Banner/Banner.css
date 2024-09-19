@@ -1,0 +1,16 @@
+.banner-container {
+    display: flex; /* Flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 10px 0; /* Espaçamento em cima e embaixo */
+  }
+  
+  .banner-image {
+    width: 130%; /* Largura do banner */
+    height: auto; /* Altura automática para manter a proporção */
+    max-width: 900px; /* Tamanho máximo */
+    cursor: pointer;
+    border-radius: 8px; /* Bordas arredondadas, opcional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra, opcional */
+  }
+  

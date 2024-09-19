@@ -49,12 +49,13 @@ const Navbar = ({ setShowLogin }) => {
 
   return (
     <div className='navbar'>
-  {/* <div className='navbar-logo' onClick={() => handleNavigate('/', 'home')}>
-        <img src={assets.logo1} alt="Logo" className='nav-logo-img' />
-      </div> */}
-
+  <div className='navbar-logo' onClick={() => handleNavigate('/', 'home')}>
+        <img src={assets.logon} alt="Logo" className='nav-logo-img' />
+      </div>
+     <p className='nav-name'>HeavenBooks</p>
       <div onClick={() => handleNavigate('/', 'home')}>
       </div>
+      {/* Menu com as opções */}
       <ul className="navbar-menu">
         <li onClick={() => handleNavigate('/', 'home')} className={menu === "home" ? "active" : ""}>Home</li>
         <li onClick={() => handleNavigate('/', 'explore-menu')} className={menu === "menu" ? "active" : ""}>Livros</li>
@@ -63,9 +64,9 @@ const Navbar = ({ setShowLogin }) => {
       </ul>
       <div className='navbar-icons'>
       {/* Ícone de coração */}
-      <div onClick={() => setIsFavoritesOpen(!isFavoritesOpen)} className='navbar-favorites-icon'>
+      {/* <div onClick={() => setIsFavoritesOpen(!isFavoritesOpen)} className='navbar-favorites-icon'>
         <FontAwesomeIcon icon={faHeart} style={{ cursor: 'pointer', color: 'white' }} />
-      </div>
+      </div> */}
 
       <div onClick={() => navigate('/cart')} className='navbar-search-icon'>
     <img src={assets.bag} alt="Cart Icon" className='nav-bag-icon' />

@@ -3,10 +3,12 @@ import './Sidebar.css'
 import { assets } from '../../assets/assets'
 import { NavLink } from 'react-router-dom'
 
+// Sidebar componente para o display de opções no dashboard de admin. Esse componente é funcional e intuitivo.
 const Sidebar = () => {
   return (
     <div className='sidebar'>
       <div className="sidebar-options">
+        {/* Navlinks trazem as páginas de Adição de livros, Lista de edição dos livros e controle das compras feitas */}
         <NavLink to='/add' className="sidebar-option">
           <img src={assets.add_icon} alt="" />
           <p>Adicionar Livros</p>

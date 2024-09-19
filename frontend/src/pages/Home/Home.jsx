@@ -6,6 +6,7 @@ import PromoDisplay from '../../components/PromoDisplay/PromoDisplay'
 import NewsletterForm from '../../components/Newsletter/NewsletterForm'
 import Services from '../../components/Services/Services'
 import CostumerOpinion from '../../components/CostumerOpinion/CostumerOpinion'
+import Banner from '../../components/Banner/Banner'
 
 const Home = () => {
 
@@ -14,6 +15,7 @@ const Home = () => {
   return (
     <>
       <Header />
+      <Banner />
       <ExploreMenu setCategory={setCategory} category={category} />
       <BookDisplay category={category} />
       <PromoDisplay />

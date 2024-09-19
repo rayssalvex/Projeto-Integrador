@@ -57,7 +57,6 @@ const Header = () => {
         <div onClick={() => handleBannerClick('#explore-menu')}>
           <img src={assets.header8} alt="Promoção 8" className="carousel-banner" />
         </div>
-        
       </Slider>
     </div>
          </div>

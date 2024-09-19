@@ -1,10 +1,11 @@
 import basket_icon from './basket_icon.png'
-import logo from './logo.svg'
+import logon from './log.png' 
 import header_img2 from './header_img2.png'
 import search_icon from './search_icon.png'
 import linkedin_logo from './linkedin.png'
 import instagram_logo from './instagram.png'
 import github_logo from './github.png'
+import parceria from './parceria.jpeg'
 
 // Header
 import header1 from './header1.jpg'
@@ -73,7 +74,7 @@ import bag from './shopping-basket.png'
 import newsletter_img from './newsletter-img.jpg'
 import avatar_icon from './avatar_icon.jpeg'
 export const assets = {
-    logo,
+    logon,
     basket_icon,
     avatar_icon,
     header_img2,
@@ -87,6 +88,7 @@ export const assets = {
     instagram_logo,
     github_logo,
     newsletter_img,
+    parceria,
     logo1,
     banner1,
     banner2,

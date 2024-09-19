@@ -37,7 +37,7 @@ const BookDisplay = ({ category }) => {
         {/* Campo de busca para filtrar os itens */}
         <input 
           type='text' 
-          placeholder='Buscar...' 
+          placeholder='Pesquisar...' 
           value={searchTerm} 
           onChange={handleSearchChange} 
           className='book-search-input'

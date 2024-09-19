@@ -11,8 +11,10 @@
     color: rgb(82, 88, 95);
 }
 .navbar .logo{
-    width: max(10%, 30px);
-    margin-left: 10px;
+    /* width: max(10%, 30px);
+    margin-left: 10px; */
+    width: 80px;
+    margin-left: 40px;
 }
 .navbar .profile{
     width: 50px;

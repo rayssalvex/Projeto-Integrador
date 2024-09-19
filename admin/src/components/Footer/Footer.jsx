@@ -3,6 +3,7 @@ import './Footer.css';
 import { assets } from '../../assets/assets';
 // import { Link } from 'react-router-dom';
 
+// Footer simples com frase de Copyright e links 
 const Footer = () => {
   return (
     <div className='footer' id='footer'>
