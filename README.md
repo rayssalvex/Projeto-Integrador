@@ -1,7 +1,7 @@
 # Aplicação Web de Compra de Livros 📚
 
 ## ✍🏼 Descrição
-Esta é uma aplicação web MERN (MongoDB, Express, React, Node.js) desenvolvida para a compra de livros e utilizada como Projeto Integrador de conclusão de curso no Rio Pomba Valley. Os usuários podem navegar por uma lista de livros disponíveis, visualizar detalhes específicos de cada livro e compra realizando uma transação dentro da aplicação.
+Esta é uma aplicação web MERN (MongoDB, Express, React, Node.js) desenvolvida para a compra de livros e utilizada como Projeto Integrador de conclusão de curso no Rio Pomba Valley. Os usuários podem navegar por uma lista de livros disponíveis, visualizar detalhes específicos de cada livro e realizar compras dentro da aplicação.
 
 ## 📋 Funcionalidades
 - **Listagem de Livros**: Os usuários podem visualizar uma lista de todos os livros disponíveis para troca ou compra.
