@@ -1,12 +1,11 @@
 # Aplicação Web de Compra de Livros 📚
 
 ## ✍🏼 Descrição
-Esta é uma aplicação web MERN (MongoDB, Express, React, Node.js) desenvolvida para a compra de livros e utilizada como Projeto Integrador de conclusão de curso no Rio Pomba Valley. Os usuários podem navegar por uma lista de livros disponíveis, visualizar detalhes específicos de cada livro, cadastrar novos livros para troca e gerenciar suas próprias ofertas.
+Esta é uma aplicação web MERN (MongoDB, Express, React, Node.js) desenvolvida para a compra de livros e utilizada como Projeto Integrador de conclusão de curso no Rio Pomba Valley. Os usuários podem navegar por uma lista de livros disponíveis, visualizar detalhes específicos de cada livro e realizar compras dentro da aplicação.
 
 ## 📋 Funcionalidades
-- **Listagem de Livros**: Os usuários podem visualizar uma lista de todos os livros disponíveis para troca ou compra.
-- **Detalhes do Livro**: Ao clicar em um livro, os usuários podem ver informações detalhadas como autor, descrição, preço e condição do livro.
-- **Gerenciamento de Livros**: Os usuários podem editar ou remover livros que eles próprios cadastraram.
+- **Listagem de Livros**: Os usuários podem visualizar uma lista de todos os livros disponíveis para compra.
+- **Detalhes do Livro**: Ao clicar em um livro, os usuários podem ver informações detalhadas como autor e descrição do livro.
 - **Autenticação e Autorização**: O sistema usa autenticação JWT para gerenciar as permissões de usuários.
 - **Sistema de Pagamento Integrado**: O Stripe, em modo de desenvolvimento, permite testar e simular transações sem movimentar dinheiro real. É possível criar e testar pagamentos, assinaturas e reembolsos usando cartões de teste fornecidos pela plataforma.
 - **Chat Integrado**: Permite conversa direta entre usuários e o suporte da aplicação.
