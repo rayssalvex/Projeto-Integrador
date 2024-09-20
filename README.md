@@ -24,20 +24,19 @@ Esta é uma aplicação web MERN (MongoDB, Express, React, Node.js) desenvolvida
    ```bash
    git clone https://github.com/rayssalvex/Projeto-Integrador-Final.git
 
-  2.Navegue até a pasta do backend e instale as dependências:
+2.Navegue até a pasta do backend e instale as dependências:
 ```
 cd ./backend
 npm install
 ```
 
 3. Para uso pessoal configure as variáveis de ambiente no arquivo .env:
-.env
 ```
 MONGODB_URI=sua_conexao_mongodb
 JWT_SECRET=sua_chave_secreta
 STRIPE_SECRET_KEY=sua_chave
 ```
- 4.Inicie o servidor backend:
+4.Inicie o servidor backend:
 ```
 npm run server
 ```
