@@ -66,7 +66,6 @@ Apesar do final do curso, continuarei a aprimorar o projeto com esses passos fut
 ## 📧 Contato
 Para mais informações, entre em contato:
 
-- Nome: Rayssa dos Santos Alves
-- E-mail: rayssa.alves1608@gmail.com
+- Nome: Rayssa Alves
 - LinkedIn: www.linkedin.com/in/rayssa-santos-alves
 
