@@ -48,10 +48,21 @@ npm install
 ```
 npm run dev
 ```
+7.Em um novo terminal, navegue até a pasta admin e instale as dependências:
+```
+cd ./admin
+npm install
+```
+8.Inicie o servidor admin:
+```
+npm run dev
+```
 ## 📱 Uso
 - Acesse a aplicação em https://localhost:5173.
 - Crie uma conta com e-mail e senha e faça login.
 - Navegue pelos livros, adicione ao carrinho e faça compras simuladas.
+- Acesse a aplicação em https://localhost:5174
+- Controle por lá livros e compras feitos e adicionados. 
 
 ## 🌙 Próximos Passos
 Apesar do final do curso, continuarei a aprimorar o projeto com esses passos futuros:
